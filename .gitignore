@@ -104,4 +104,4 @@ dist
 .tern-port
 
 app.env
-mysql/msql.env
+mysql/mysql.env
