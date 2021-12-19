@@ -1,5 +1,5 @@
 import * as express from "express";
-const app: express.Express = express();
+const app: express.Express = express.default(); //https://qiita.com/kozzzz/items/59816861e6a2eb80cb34
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
