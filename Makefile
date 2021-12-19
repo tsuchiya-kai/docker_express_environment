@@ -8,8 +8,8 @@ up:
 ps:
 	docker-compose ps
 
-work express:
-	docker exec -it express-container sh
+work:
+	docker exec -it app bash
 
 down:
 	docker-compose down
