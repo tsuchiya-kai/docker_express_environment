@@ -8,7 +8,7 @@ docker と express 環境のボイラープレートを作りたい
 
 - Express（アプリケーション側）
 
-node は 16 系を使用、localhost の post を 4000 に変更
+node は 16 系を使用、localhost の port を 4000 に変更
 
 <br>
 
