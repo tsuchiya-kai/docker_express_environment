@@ -8,11 +8,8 @@ up:
 ps:
 	docker-compose ps
 
-work express:
-	docker exec -it app sh
-
-work mysql:
-	docker exec -it mysql sh
+work:
+	docker exec -it app bash
 
 down:
 	docker-compose down
