@@ -13,7 +13,7 @@ services:
     networks:
       - default
   app:
-    image: node:12
+    image: node:16
     env_file: ./app.env
     environment:
       - TZ=Asia/Tokyo
