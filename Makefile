@@ -9,7 +9,10 @@ ps:
 	docker-compose ps
 
 work express:
-	docker exec -it express-container sh
+	docker exec -it app sh
+
+work mysql:
+	docker exec -it mysql sh
 
 down:
 	docker-compose down
