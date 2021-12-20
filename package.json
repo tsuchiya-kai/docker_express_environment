@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "ts-node-dev --poll index.ts",
+    "start": "ts-node-dev --poll src/index.ts",
     "build": "tsc",
     "check-types": "tsc --noEmit",
     "lint": "run-p -l -c --aggregate-output lint:*",
@@ -22,6 +22,7 @@
     "typescript": "^4.5.4"
   },
   "dependencies": {
+    "@tsconfig/node16": "^1.0.2",
     "express": "^4.17.2",
     "ts-node-dev": "^1.1.8",
     "yarn-run-all": "^3.1.1"
