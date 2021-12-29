@@ -25,10 +25,10 @@ services:
       context: .
       dockerfile: ./.docker/app/Dockerfile
     container_name: app
-    env_file: ./app.env
     environment:
-      - TZ=Asia/Tokyo
-      - DEBUG=app:*
+      MYSQL_SERVER: mysql
+      TZ: Asia/Tokyo
+      DEBUG: app:*
     tty: true
     ports:
       - "4000:4000"
@@ -45,10 +45,10 @@ services:
     container_name: phpmyadmin
     image: phpmyadmin/phpmyadmin
     environment:
-      - PMA_ARBITRARY=1
-      - PMA_HOST=mysql
-      - PMA_USER=root
-      - PMA_PASSWORD=root
+      PMA_ARBITRARY: 1
+      PMA_HOST: mysql
+      PMA_USER: root
+      PMA_PASSWORD: root
     ports:
       - 9090:80
 networks:
