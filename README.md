@@ -14,6 +14,14 @@ node は 16 系を使用、localhost の port を 4000 に変更
 
 特筆した変更はなし
 
+<br>
+
+## get started
+
+```bash
+make up
+```
+
 ## 参考にした記事
 
 - [Docker+Express+MySQL の環境をつくる](https://note.com/kawa1228/n/nb18e19fbf4cc)
