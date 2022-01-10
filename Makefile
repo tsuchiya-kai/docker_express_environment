@@ -20,5 +20,8 @@ stop:
 generate:
 	yarn prisma:generate
 
+migrate:
+	docker exec app yarn prisma:migrate
+
 lint:
 	yarn fix
